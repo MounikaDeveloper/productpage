@@ -1,0 +1,25 @@
+body{
+    font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+}
+.firstdiv{
+    background-color: #7A7D7F;
+    color:#DADBD4;
+    font-size: 0.7em;
+}
+#location{
+    padding-left: 3cm;
+}
+#socialmedia{
+    padding-left: 2cm;
+    font-size: 0.7em;
+}
+#fasearch{
+    padding: auto;
+    margin: auto;
+}
+.nav-link{
+    font-weight: bold;
+}
+#gpa .nav-link:hover{
+    background-color: lightsteelblue;
+}
