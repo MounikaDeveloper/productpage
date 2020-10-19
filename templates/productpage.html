@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- external css-->
       <link rel="stylesheet" type="text/css" href="{% static 'css/products.css' %}">
-    <title>Hello, world!</title>
+    <title>Product Page</title>
   </head>
   <body>
     <header>
@@ -148,15 +148,25 @@
                 text-align: center;padding:5px 27px;">Our Services</button>
                      <button style="font-size:0.9em;background-color:#f5e23b;font-weight: bold;border: none;
                 text-align: center;padding:7px 8px;margin-top: 23%"> <i class="fa fa-file-pdf-o"></i>Download Brochure</button>
+                     <div >
+                         <div style="position: relative;margin:2px">
                      <img src="{% static 'images/f2.jpg' %}" height="300" width="180" style="margin-top: 50%;
 -webkit-filter: blur(1px); /* Safari 6.0 - 9.0 */
   filter: blur(1px);">
-                     <div style="color:white;font-size: 1.0em;font-weight: bold">
-                     <div style="top:70%;right:40%;position:absolute">Call Us</div>
-                     <div style="top:72%;right:25%;position:absolute">(+91)-9666 848 734</div>
-                         <button type="submit"  style="top:74%;right:32%;position:absolute;margin-top: 4%;border-radius: 25px;padding:4px 15px;font-weight: bold;
-background-color: #f5e23b;font-size: 1.2em;border: none">Reach Us</button>
+{#                     <div style="color:white;font-size: 1.0em;font-weight: bold;">#}
+{#                     <div style="top:10%;right:40%;position:absolute;z-index:1;color:green" class="overlay">Call Us</div>#}
+{#                     <div style="top:72%;right:25%;position:absolute;z-index:1">(+91)-9666 848 734</div>#}
+{#                         <button type="submit"  style="top:74%;right:32%;position:absolute;margin-top: 4%;border-radius: 25px;padding:4px 15px;font-weight: bold;#}
+{#background-color: #f5e23b;font-size: 1.2em;border: none;z-index:1">Reach Us</button>#}
+{#                         </div>#}
+                         <div style="color:white;font-size: 0.8em;font-weight: bold;
+position: absolute;top:53%;left:10%">
+                             <p>Call Us</p>
+                             <p style="">(+91)-9666 848 734</p>
+                             <button type="submit"  style="border-radius: 25px;padding:4px 15px;font-weight: bold;
+background-color: #f5e23b;font-size: 1.2em;border: none;z-index:1">Reach Us</button>
                      </div>
+                             </div>
     </div>
             </div>
                 </div>
@@ -175,19 +185,34 @@ background-color: #f5e23b;font-size: 1.2em;border: none">Reach Us</button>
              <div style="margin-top:3%;background-color:#f5e23b;padding:12px 20px;width:370px;height:40px;"><b>What is the delivery charge?  </b></div>
         </div>
             </div>
-            <div class="col" style="padding-top: 5%">
-                <video width="500" controls >
+            <div class="col" style="position: relative;padding-top: 5%">
+             <video width="500" autoplay loop muted controls >
                     <source src="{% static 'videos/Drone - 9732.mp4' %}" type="video/mp4" >
                 </video>
-            </div>
+                            <div style="position: absolute;color: white;top:20%;left:25%;font-size:1.9em;
+font-weight: bold">
+        <p>Overview of Drone<br>WATCH IT!</p>
+
+                </div>
+                </div>
+
+{#            <div  style="padding-top: 5%">#}
+{#                <video width="500" autoplay loop muted controls style="">#}
+{#                    <source src="{% static 'videos/Drone - 9732.mp4' %}" type="video/mp4" >#}
+{#                </video>#}
+{#                <div class="overlay">#}
+{#        <p>Content above your video</p>#}
+{#                </div>#}
+{#            </div>#}
+        </div>
         </div>
         </div>
     </section>
 <div style="background-image: url({% static 'images/f4.jpg' %});margin-top: 20%;margin-left: 5%;
-        margin-right: 5%;color:white;height:90px;padding: auto" class="img-fluid">
-<span style="margin-top:3%;padding-left: 3%;font-weight: bold;font-size: 1em">Looking forward to fly this in your farm? Please approach us</span>
-    <span style="padding-left: 10%;font-size: 1.3em;
-font-weight: bold;border:5px yellow solid;">Make an Appointment</span><br><br><br><br>
+        margin-right: 5%;color:white;height:90px;padding: auto;position: relative;" class="img-fluid">
+<span style="padding-top:3%;padding-left: 3%;color:white;font-weight: bold;position:absolute;font-size: 1em">Looking forward to fly this in your farm? Please approach us</span>
+    <span style="margin-left: 70%;margin-top:3%;font-size: 1.3em;
+font-weight: bold;border:5px yellow solid;position: absolute">Make an Appointment</span><br><br><br><br>
 </div>
     <div class="container-fluid pl-sm-5" style="margin-top: 8%;font-weight: bold;font-size: 1.5em;padding-botton:10%">
         <div class="row">

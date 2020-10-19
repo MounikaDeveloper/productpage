@@ -1,5 +1,6 @@
 body{
     font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+
 }
 .firstdiv{
     background-color: #7A7D7F;
@@ -22,4 +23,22 @@ body{
 }
 #gpa .nav-link:hover{
     background-color: lightsteelblue;
+}
+.mydiv{
+    width:180px;
+    height:300px;
+}
+.overlay{
+      position:absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:darkred;
+    min-height: 100vh;
+    flex-direction: column;
+
 }
